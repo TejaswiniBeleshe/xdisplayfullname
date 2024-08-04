@@ -9,7 +9,7 @@ function App() {
   const handleData = (event)=>{
     event.preventDefault();
     let full = fname+" "+lname;
-    setFullname(full);
+    setFullname(`Full Name:${full}`);
     // setFname('');
     // setLname(''); 
   }
@@ -21,8 +21,7 @@ function App() {
         <p>Last Name:<input type="text" value={lname} onChange={(e)=>setLname(e.target.value)} required/></p>
         <button>Submit</button>
        </form>
-
-       <p>Full Name:{fullname}</p>
+       <p>{fullname}</p>
 
     </div>
   );
