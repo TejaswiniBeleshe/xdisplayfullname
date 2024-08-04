@@ -9,7 +9,7 @@ function App() {
   const handleData = (event)=>{
     event.preventDefault();
     let full = fname+" "+lname;
-    setFullname(`Full Name:${full}`);
+    setFullname(`Full Name: ${full}`);
     // setFname('');
     // setLname(''); 
   }
