@@ -17,8 +17,8 @@ function App() {
     <div className="App">
        <h1>Full Name Display</h1>
        <form onSubmit={(e)=>handleData(e)}>
-        <p>First Name:<input type="text" value={fname} onChange={(e)=>setFname(e.target.value)} required/></p>
-        <p>Last Name:<input type="text" value={lname} onChange={(e)=>setLname(e.target.value)} required/></p>
+        <><label htmlFor="first">First Name:</label><input type="text" id="first" value={fname} onChange={(e)=>setFname(e.target.value)} required/></>
+        <><label htmlFor="last">Last Name:</label><input type="text" id="last" value={lname} onChange={(e)=>setLname(e.target.value)} required/></>
         <button>Submit</button>
        </form>
        <p>{fullname}</p>
