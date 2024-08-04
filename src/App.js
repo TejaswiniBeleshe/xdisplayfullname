@@ -21,8 +21,8 @@ function App() {
     <div className="App">
        <h1>Full Name Display</h1>
        <form onSubmit={(e)=>handleData(e)}>
-        <><label htmlFor="first">First Name:</label><input type="text" id="first" value={fname} onChange={(e)=>setFname(e.target.value)}/></>
-        <><label htmlFor="last">Last Name:</label><input type="text" id="last" value={lname} onChange={(e)=>setLname(e.target.value)}/></>
+        <><label htmlFor="first">First Name:</label><input type="text" id="first" name="firstname" value={fname} onChange={(e)=>setFname(e.target.value)} required/></>
+        <><label htmlFor="last">Last Name:</label><input type="text" id="last" name="lastname" value={lname} onChange={(e)=>setLname(e.target.value)} required/></>
         <button type="submit">Submit</button>
        </form>
        <p>{fullname}</p>
