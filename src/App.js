@@ -19,7 +19,7 @@ function App() {
        <form onSubmit={(e)=>handleData(e)}>
         <><label htmlFor="first">First Name:</label><input type="text" id="first" value={fname} onChange={(e)=>setFname(e.target.value)} required/></>
         <><label htmlFor="last">Last Name:</label><input type="text" id="last" value={lname} onChange={(e)=>setLname(e.target.value)} required/></>
-        <button>Submit</button>
+        <button type="submit">Submit</button>
        </form>
        <p>{fullname}</p>
 
