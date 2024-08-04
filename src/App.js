@@ -14,13 +14,14 @@ function App() {
   }
   return (
     <div className="App">
+       <h1>Full Name Display</h1>
        <form onSubmit={(e)=>handleData(e)}>
         <p>First Name:<input type="text" value={fname} onChange={(e)=>setFname(e.target.value)} required/></p>
         <p>Last Name:<input type="text" value={lname} onChange={(e)=>setLname(e.target.value)} required/></p>
         <button type='submit'>Submit</button>
        </form>
 
-       <h2>{fullname}</h2>
+       <p>{fullname}</p>
 
     </div>
   );
