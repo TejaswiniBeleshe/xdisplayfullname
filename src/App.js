@@ -6,11 +6,11 @@ function App() {
   let [fname,setFname] = useState('');
   let [lname,setLname] = useState('');
   let [fullname,setFullname] = useState('')
-  const handleData = (e)=>{
-    e.preventDefault();
+  const handleData = (event)=>{
+    event.preventDefault();
     setFullname(`${fname} ${lname}`);
-    setFname('');
-    setLname(''); 
+    // setFname('');
+    // setLname(''); 
   }
   return (
     <div className="App">
@@ -18,10 +18,10 @@ function App() {
        <form onSubmit={(e)=>handleData(e)}>
         <p>First Name:<input type="text" value={fname} onChange={(e)=>setFname(e.target.value)} required/></p>
         <p>Last Name:<input type="text" value={lname} onChange={(e)=>setLname(e.target.value)} required/></p>
-        <button type='submit'>Submit</button>
+        <button>Submit</button>
        </form>
 
-       <p>{fullname}</p>
+       <p>Full Name:{fullname}</p>
 
     </div>
   );
