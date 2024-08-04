@@ -12,8 +12,9 @@ function App() {
       let full = fname+" "+lname;
       setFullname(`Full Name: ${full}`);
       // setFname('');
-      // setLname(''); 
-      
+      // setLname('');  
+    }else{
+      setFullname('')
     }
    
   }
