@@ -10,12 +10,12 @@ function App() {
   const handleData = (event)=>{
     event.preventDefault();
     // if(fname !=="" || lname !== ""){
-    //   let full = fname+" "+lname;
-    //   setFullname(`Full Name: ${full}`);
+      let full = fname+" "+lname;
+      setFullname(`Full Name: ${full}`);
     // }else{
       // setFullname('')
     // }
-   setCheck((prev)=>!prev);
+  //  setCheck((prev)=>!prev);
   }
   return (
     <div className="App">
@@ -25,7 +25,7 @@ function App() {
         <p><label htmlFor="last">Last Name:</label><input type="text" id="last" name="lastname" value={lname} onChange={(e)=>setLname(e.target.value)} required/></p>
         <button type="submit">Submit</button>
        </form>
-       <p>{check?`Full Name: ${fname} ${lname}`:""}</p>
+       <p>{fullname}</p>
 
     </div>
   );
