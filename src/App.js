@@ -8,7 +8,8 @@ function App() {
   let [fullname,setFullname] = useState('')
   const handleData = (event)=>{
     event.preventDefault();
-    setFullname(`${fname} ${lname}`);
+    let full = fname+" "+lname;
+    setFullname(full);
     // setFname('');
     // setLname(''); 
   }
