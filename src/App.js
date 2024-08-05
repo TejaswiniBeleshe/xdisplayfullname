@@ -23,7 +23,10 @@ function App() {
             id="first"
             name="firstname"
             value={fname}
-            onChange={(e) => setFname(e.target.value)}
+            onChange={(e) => {
+              setFname(e.target.value);
+              setFullname('')
+            }}
             required
           />
         </><br/>
@@ -34,7 +37,11 @@ function App() {
             id="last"
             name="lastname"
             value={lname}
-            onChange={(e) => setLname(e.target.value)}
+            onChange={(e) => {
+              setLname(e.target.value)
+              setFullname('')
+            }
+            }
             required
           />
         </>
