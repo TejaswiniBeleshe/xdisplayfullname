@@ -25,7 +25,7 @@ function App() {
             value={fname}
             onChange={(e) => {
               setFname(e.target.value);
-              setFullname('')
+              // setFullname('')
             }}
             required
           />
@@ -39,7 +39,7 @@ function App() {
             value={lname}
             onChange={(e) => {
               setLname(e.target.value)
-              setFullname('')
+              // setFullname('')
             }
             }
             required
@@ -48,7 +48,7 @@ function App() {
         <br/>
         <button type="submit">Submit</button>
       </form>
-      {fullname&&`Full Name: ${fullname}`}
+      {fullname?`Full Name: ${fullname}`:""}
     </div>
   );
 }
