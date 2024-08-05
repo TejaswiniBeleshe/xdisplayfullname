@@ -10,6 +10,17 @@ function App() {
 
   const handleData = (event)=>{
     event.preventDefault();
+    // let a ='1234567890`!@#$%^&*()-+{}[]|?/>,<.'
+    // for(let i=0;i<fname.length;i++){
+    //   if(a.includes(fname[i])){
+    //     return;
+    //   }
+    // }
+    // for(let i=0;i<lname.length;i++){
+    //   if(a.includes(lname[i])){
+    //     return;
+    //   }
+    // }
     setFullname(fname+' '+lname)
   }
   return (
